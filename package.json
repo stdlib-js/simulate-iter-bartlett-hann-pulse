@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/simulate-iter-bartlett-hann-pulse",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Create an iterator which generates a Bartlett-Hann pulse waveform.",
   "license": "Apache-2.0",
   "author": {
