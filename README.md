@@ -305,6 +305,23 @@ while ( true ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/simulate/iter/bartlett-pulse`][@stdlib/simulate/iter/bartlett-pulse]: create an iterator which generates a Bartlett pulse waveform.
+-   [`@stdlib/simulate/iter/hann-pulse`][@stdlib/simulate/iter/hann-pulse]: create an iterator which generates a Hann pulse waveform.
+-   [`@stdlib/simulate/iter/pulse`][@stdlib/simulate/iter/pulse]: create an iterator which generates a pulse waveform.
+-   [`@stdlib/simulate/iter/triangle-wave`][@stdlib/simulate/iter/triangle-wave]: create an iterator which generates a triangle wave.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -361,6 +378,18 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/simulate-iter-bartlett-hann-pulse/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/simulate/iter/bartlett-pulse]: https://github.com/stdlib-js/simulate-iter-bartlett-pulse
+
+[@stdlib/simulate/iter/hann-pulse]: https://github.com/stdlib-js/simulate-iter-hann-pulse
+
+[@stdlib/simulate/iter/pulse]: https://github.com/stdlib-js/simulate-iter-pulse
+
+[@stdlib/simulate/iter/triangle-wave]: https://github.com/stdlib-js/simulate-iter-triangle-wave
+
+<!-- </related-links> -->
 
 </section>
 
