@@ -1,0 +1,45 @@
+{
+  "name": "@stdlib/simulate-iter-bartlett-hann-pulse",
+  "version": "0.0.0",
+  "description": "Create an iterator which generates a Bartlett-Hann pulse waveform.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/simulate-iter-bartlett-hann-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "simulate",
+    "simulation",
+    "bartlett",
+    "triangle",
+    "triangular",
+    "fejer",
+    "hann",
+    "raised",
+    "cosine",
+    "raised-cosine",
+    "window",
+    "pulse",
+    "wave",
+    "train",
+    "signal",
+    "processing",
+    "waveform",
+    "periodic",
+    "iterator",
+    "iterate",
+    "iteration",
+    "iter"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
