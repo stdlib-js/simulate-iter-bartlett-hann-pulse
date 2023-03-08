@@ -32,10 +32,14 @@ A Bartlett-Hann pulse waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:bartlett_hann_pulse_waveform" align="center" raw="f(t; T, \tau, A, \varphi) = \begin{cases}A \biggl(0.62 - 0.48\biggl|\frac{t-\varphi}{\tau-1} - \frac{1}{2}\biggr| - 0.38\cos\frac{2\pi (t-\varphi)}{\tau-1}\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}" alt="Equation for a Bartlett-Hann pulse waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; T, \tau, A, \varphi) = \begin{cases}A \biggl(0.62 - 0.48\biggl|\frac{t-\varphi}{\tau-1} - \frac{1}{2}\biggr| - 0.38\cos\frac{2\pi (t-\varphi)}{\tau-1}\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:bartlett_hann_pulse_waveform">
+```math
+f(t; T, \tau, A, \varphi) = \begin{cases}A \biggl(0.62 - 0.48\biggl|\frac{t-\varphi}{\tau-1} - \frac{1}{2}\biggr| - 0.38\cos\frac{2\pi (t-\varphi)}{\tau-1}\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; T, \tau, A, \varphi) = \begin{cases}A \biggl(0.62 - 0.48\biggl|\frac{t-\varphi}{\tau-1} - \frac{1}{2}\biggr| - 0.38\cos\frac{2\pi (t-\varphi)}{\tau-1}\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:bartlett_hann_pulse_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@76fd234ed3f3558f7a75e86bce3ad928b5fb7e3a/lib/node_modules/@stdlib/simulate/iter/bartlett-hann-pulse/docs/img/equation_bartlett_hann_pulse_waveform.svg" alt="Equation for a Bartlett-Hann pulse waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -49,14 +53,30 @@ where `T` is the pulse period, `τ` is the pulse duration, `A` is the amplitude,
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/simulate-iter-bartlett-hann-pulse
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterBartlettHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-bartlett-hann-pulse@esm/index.mjs';
+var iterBartlettHannPulse = require( '@stdlib/simulate-iter-bartlett-hann-pulse' );
 ```
 
 #### iterBartlettHannPulse( \[options] )
@@ -261,13 +281,8 @@ var bool = it.next().done;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import iterBartlettHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-bartlett-hann-pulse@esm/index.mjs';
+```javascript
+var iterBartlettHannPulse = require( '@stdlib/simulate-iter-bartlett-hann-pulse' );
 
 // Create an iterator:
 var opts = {
@@ -288,10 +303,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -314,10 +325,10 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/simulate/iter/bartlett-pulse`][@stdlib/simulate/iter/bartlett-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Bartlett pulse waveform.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/hann-pulse`][@stdlib/simulate/iter/hann-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Hann pulse waveform.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/pulse`][@stdlib/simulate/iter/pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a pulse waveform.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/triangle-wave`][@stdlib/simulate/iter/triangle-wave]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a triangle wave.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/bartlett-pulse`][@stdlib/simulate/iter/bartlett-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Bartlett pulse waveform.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/hann-pulse`][@stdlib/simulate/iter/hann-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Hann pulse waveform.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/pulse`][@stdlib/simulate/iter/pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a pulse waveform.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/triangle-wave`][@stdlib/simulate/iter/triangle-wave]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a triangle wave.</span>
 
 </section>
 
@@ -332,7 +343,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -376,7 +387,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -394,13 +405,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/simulate/iter/bartlett-pulse]: https://github.com/stdlib-js/simulate-iter-bartlett-pulse/tree/esm
+[@stdlib/simulate/iter/bartlett-pulse]: https://github.com/stdlib-js/simulate-iter-bartlett-pulse
 
-[@stdlib/simulate/iter/hann-pulse]: https://github.com/stdlib-js/simulate-iter-hann-pulse/tree/esm
+[@stdlib/simulate/iter/hann-pulse]: https://github.com/stdlib-js/simulate-iter-hann-pulse
 
-[@stdlib/simulate/iter/pulse]: https://github.com/stdlib-js/simulate-iter-pulse/tree/esm
+[@stdlib/simulate/iter/pulse]: https://github.com/stdlib-js/simulate-iter-pulse
 
-[@stdlib/simulate/iter/triangle-wave]: https://github.com/stdlib-js/simulate-iter-triangle-wave/tree/esm
+[@stdlib/simulate/iter/triangle-wave]: https://github.com/stdlib-js/simulate-iter-triangle-wave
 
 <!-- </related-links> -->
 
