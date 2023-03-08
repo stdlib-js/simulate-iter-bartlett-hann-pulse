@@ -32,10 +32,14 @@ A Bartlett-Hann pulse waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:bartlett_hann_pulse_waveform" align="center" raw="f(t; T, \tau, A, \varphi) = \begin{cases}A \biggl(0.62 - 0.48\biggl|\frac{t-\varphi}{\tau-1} - \frac{1}{2}\biggr| - 0.38\cos\frac{2\pi (t-\varphi)}{\tau-1}\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}" alt="Equation for a Bartlett-Hann pulse waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; T, \tau, A, \varphi) = \begin{cases}A \biggl(0.62 - 0.48\biggl|\frac{t-\varphi}{\tau-1} - \frac{1}{2}\biggr| - 0.38\cos\frac{2\pi (t-\varphi)}{\tau-1}\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:bartlett_hann_pulse_waveform">
+```math
+f(t; T, \tau, A, \varphi) = \begin{cases}A \biggl(0.62 - 0.48\biggl|\frac{t-\varphi}{\tau-1} - \frac{1}{2}\biggr| - 0.38\cos\frac{2\pi (t-\varphi)}{\tau-1}\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; T, \tau, A, \varphi) = \begin{cases}A \biggl(0.62 - 0.48\biggl|\frac{t-\varphi}{\tau-1} - \frac{1}{2}\biggr| - 0.38\cos\frac{2\pi (t-\varphi)}{\tau-1}\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:bartlett_hann_pulse_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@76fd234ed3f3558f7a75e86bce3ad928b5fb7e3a/lib/node_modules/@stdlib/simulate/iter/bartlett-hann-pulse/docs/img/equation_bartlett_hann_pulse_waveform.svg" alt="Equation for a Bartlett-Hann pulse waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -321,10 +325,10 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/simulate/iter/bartlett-pulse`][@stdlib/simulate/iter/bartlett-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Bartlett pulse waveform.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/hann-pulse`][@stdlib/simulate/iter/hann-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Hann pulse waveform.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/pulse`][@stdlib/simulate/iter/pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a pulse waveform.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/triangle-wave`][@stdlib/simulate/iter/triangle-wave]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a triangle wave.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/bartlett-pulse`][@stdlib/simulate/iter/bartlett-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Bartlett pulse waveform.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/hann-pulse`][@stdlib/simulate/iter/hann-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Hann pulse waveform.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/pulse`][@stdlib/simulate/iter/pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a pulse waveform.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/triangle-wave`][@stdlib/simulate/iter/triangle-wave]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a triangle wave.</span>
 
 </section>
 
@@ -383,7 +387,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
